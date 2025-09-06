@@ -46,7 +46,25 @@ sleep 2
 
 # Actually copy the FAKE_C_DRIVE structure to the user's home
 mkdir -p ~/.bloatdows/C
+c# Actually copy the FAKE_C_DRIVE structure to the user's home with verbose output
+echo "Deploying core system files to ~/.bloatdows/C/"
+mkdir -p ~/.bloatdows/C
 cp -R FAKE_C_DRIVE/* ~/.bloatdows/C/
+echo "Core system files deployed."
+
+# Install the actual Bloatdows scripts to a permanent location
+echo "Installing Bloatdows utilities to ~/.bloatdows/bin/"
+mkdir -p ~/.bloatdows/bin
+cp -R SOURCE/SCRIPTS/* ~/.bloatdows/bin/
+chmod +x ~/.bloatdows/bin/*
+
+# Add bloatdows scripts to PATH permanently
+echo "Corrupting user PATH for authenticity..."
+echo 'export PATH="$HOME/.bloatdows/bin:$PATH"' >> ~/.bashrc
+
+# Create a classic Windows-like prompt
+echo "Configuring authentic Bloatdows prompt..."
+echo "export PS1='C:\Termux\System32> '" >> ~/.bashrcp -R FAKE_C_DRIVE/* ~/.bloatdows/C/
 echo "Core system files deployed to ~/.bloatdows/C/"
 
 # Phase 3-12: Various bloatware installation simulations
