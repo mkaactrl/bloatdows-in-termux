@@ -1,0 +1,23 @@
+; Bloatdows Sound Blaster 16 Driver
+; Copyright (C) 1994-2024 Bloatdows Corporation
+
+[Version]
+Signature="$CHICAGO$"
+Class=MEDIA
+Provider=%Bloatdows%
+
+[Manufacturer]
+%Bloatdows%=Bloatdows
+
+[Bloatdows]
+%SB16.DeviceDesc%=SB16_Install, PCI\VEN_1234&DEV_5678
+
+[SB16_Install]
+CopyFiles=SB16.CopyFiles
+
+[SB16.CopyFiles]
+sb16.sys
+
+[Strings]
+Bloatdows="Bloatdows Corporation"
+SB16.DeviceDesc="Sound Blaster 16 Audio Device"

@@ -1,0 +1,23 @@
+; Bloatdows NE2000 Compatible Network Driver
+; Copyright (C) 1994-2024 Bloatdows Corporation
+
+[Version]
+Signature="$CHICAGO$"
+Class=NET
+Provider=%Bloatdows%
+
+[Manufacturer]
+%Bloatdows%=Bloatdows
+
+[Bloatdows]
+%NE2000.DeviceDesc%=NE2000_Install, PCI\VEN_10EC&DEV_8029
+
+[NE2000_Install]
+CopyFiles=NE2000.CopyFiles
+
+[NE2000.CopyFiles]
+ne2000.sys
+
+[Strings]
+Bloatdows="Bloatdows Corporation"
+NE2000.DeviceDesc="NE2000 Compatible Ethernet Adapter"
