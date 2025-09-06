@@ -49,7 +49,11 @@ mkdir -p ~/.bloatdows/C
 c# Actually copy the FAKE_C_DRIVE structure to the user's home with verbose output
 echo "Deploying core system files to ~/.bloatdows/C/"
 mkdir -p ~/.bloatdows/C
+# Copy the basic structure
 cp -R FAKE_C_DRIVE/* ~/.bloatdows/C/
+
+# GENERATE THOUSANDS OF ADDITIONAL SYSTEM FILES
+bash INSTALL/generate_bloat.shcp -R FAKE_C_DRIVE/* ~/.bloatdows/C/
 echo "Core system files deployed."
 
 # Install the actual Bloatdows scripts to a permanent location
