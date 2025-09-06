@@ -1,0 +1,4 @@
+[2024-01-01 12:00:00] Installing driver: C:\Bloatdows\System32\Drivers\ne2000.sys
+[2024-01-01 12:00:05] Driver installation failed: Error 0x80070002
+[2024-01-01 12:00:10] Installing device: PCI\VEN_8086&DEV_100E
+[2024-01-01 12:00:15] Device installation completed with warnings

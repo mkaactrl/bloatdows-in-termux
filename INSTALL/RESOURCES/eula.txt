@@ -1,0 +1,11 @@
+BLOATDOWS END-USER LICENSE AGREEMENT
+
+IMPORTANT-READ CAREFULLY: This Bloatdows End-User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and Bloatdows Corporation for the Bloatdows software product identified above, which includes computer software and may include associated media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT"). 
+
+By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not install or use the SOFTWARE PRODUCT.
+
+... [This goes on for 50 more pages but we're not actually Microsoft lawyers] ...
+
+You agree that this EULA is enforceable like any written negotiated agreement signed by you.
+
+- The Bloatdows Dev Team (Not Microsoft)
